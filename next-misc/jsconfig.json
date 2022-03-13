@@ -1,0 +1,14 @@
+// aşağıdaki tanımlama ile, bir belge veya dosyayı import ederken
+// from "../" gibi kullanıma ihtiyaç duymayız
+
+{
+  "compilerOptions": {
+    // import "../styles/globals.css";
+    // import "styles/globals.css";
+    "baseUrl": ".",
+
+    // import Footer from "../components/layout/Footer";
+    // import Footer from "@/layout/Footer";
+    "paths": { "@/layout/*": ["components/layout/*"] }
+  }
+}
